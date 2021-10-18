@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tables.css" />
+    <script src="https://kit.fontawesome.com/3f16be1e6c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans&family=Wallpoet&display=swap"
+        rel="stylesheet" />
+    <title>Data Tables Home Page</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+          <li class="top-menu">
+            <a href="index.html" target="_blank"> OurDataTables </a>
+    
+            <div>
+              <ul class="sub-menu">
+                <li>
+                  <a href="audit.html" target="_blank" >Audit</a>
+                </li>
+                <br>
+                <li>
+                  <a href="calendar.html" target="_blank">Calendar</a>
+                </li>
+                <br>
+                <li>
+                  <a href="data.html" target="_blank">Data</a>
+                </li>
+                <br>
+                <li>
+                  <a href="prices.html" target="_blank">Prices</a>
+                </li>
+          </li>
+        </ul>
+    
+        </div>
+        </li>
+        <li class="top-menu"><a href="#">Contact Us</a></li>
+        <li class="top-menu"><a href="#">Impressum</a></li>
+        </ul>
+    
+      </nav>
+    <br>
+    <header>
+        <a href="#">
+            <i class="fas fa-chart-line"></i>
+        </a>
+        <h1>Datalites</h1>
+    </header>
+    <br>
+    <main class="main-data">
+        <div>
+
+            <h3>
+                Data Table Example
+            </h3>
+        </div>
+        <br>
+      
+      
+        <table class="data-table">
+            <div class="table-title">
+                <caption>
+              <span class="cap">DataTable with button to show modal</span> 
+            </caption>
+            </div>
+
+                <!-- Look at the last entry to make sortable table columns: https://stackoverflow.com/questions/11376469/can-datatables-sort-a-column-with-an-input-field -->
+                <thead>
+                   
+                    <tr><th colspan="1"><div class="entries"> 
+                      
+                     <label for="entries">Show</label>
+                     <input type="number" name="entries" id="entries" value="10" min="5" max="100" placeholder="10"> entries
+                    </th>
+             </div>
+             <th colspan="5"> <div class="search">
+                     <label for="search">Search:</label>
+                     <input type="search" name="search" id="search"></div></th></tr>
+                     
+                 
+           
+                   
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Position
+                    </th>
+                    <th>
+                        Office
+                    </th>
+                    <th>
+                        Age
+                    </th>
+                    <th>
+                        Start date
+                    </th>
+                    <th>
+                        Salary
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Airi Satou</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td class="button-age">
+                        <!-- anchor tag? -->
+                        <button type="submit" id="age">
+                        <label for="age">Age</label>
+                      </button></td>
+                    <td>2008/11/28</td>
+                    <td>$162,700</td>
+                   
+                </tr>
+                <tr>
+                    <td>Angelica Ramos</td>
+                    <td>Chief Executive Office (CEO)</td>
+                    <td>London</td>
+                    <td class="button-age">
+                        <button type="submit" id="age">
+                        <label for="age">Age</label>
+                      </button></td>
+                    <td>2009/10/09</td>
+                    <td>$1,200,000</td>
+                   
+                </tr>
+                <tr>
+                    <td>Ashton Cox</td>
+                    <td>Junior Technical Author</td>
+                    <td>San Francisco</td>
+                    <td class="button-age">
+                        <button type="submit" id="age">
+                        <label for="age">Age</label>
+                      </button></td>
+                    <td>2009/01/12</td>
+                    <td>$86,000</td>
+                 
+                </tr>
+                <tr>
+                    <td>Bradley Greer</td>
+                    <td>Software Engineer</td>
+                    <td>London</td>
+                    <td class="button-age">
+                        <button type="submit" id="age">
+                        <label for="age">Age</label>
+                      </button></td>
+                    <td>2012/12/02</td>
+                    <td>$372,000</td>
+                   
+                </tr>
+                <tr>
+                    <td>Brenden Wagner</td>
+                    <td>Software Engineer</td>
+                    <td>San Francisco</td>
+                    <td class="button-age">
+                        <button type="submit" id="age">
+                        <label for="age">Age</label>
+                      </button></td>
+                    <td>2011/06/07</td>
+                    <td>$206,850</td>
+                  
+                </tr>
+                <tr>
+                    <td>Brielle Williamson</td>
+                    <td>Integration Specialist</td>
+                    <td>New York</td>
+                    <td class="button-age">
+                        <button type="submit" id="age">
+                        <label for="age">Age</label>
+                      </button></td>
+                    <td>2012/12/02</td>
+                    <td>$372,000</td>
+                   
+                </tr>
+                <tr>
+                    <td>Bruno Nash</td>
+                    <td>Software Engineer</td>
+                    <td>London</td>
+                    <td class="button-age">
+                        <button type="submit" id="age">
+                        <label for="age">Age</label>
+                      </button></td>
+                    <td>2011/05/03</td>
+                    <td>$163,500</td>
+                  
+                </tr>
+                <tr>
+                    <td>Cesar Vance</td>
+                    <td>Pre-Sales Support</td>
+                    <td>New York</td>
+                    <td class="button-age">
+                        <button type="submit" id="age">
+                        <label for="age">Age</label>
+                      </button></td>
+                    <td>2011/12/12</td>
+                    <td>$106,450</td>
+                    
+                </tr>
+
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        @copyright 2021 Datalites. All rights reserved.
+    </footer>
+</body>
+
+</html>

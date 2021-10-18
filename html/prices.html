@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="tables.css" />
+  <!-- Can use fontawesome CDN in CSS -->
+  <script src="https://kit.fontawesome.com/3f16be1e6c.js" crossorigin="anonymous"></script>
+  <!-- Can @import url() fonts in CSS instead -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans&family=Wallpoet&display=swap"
+    rel="stylesheet" />
+  <title>Data Tables Home Page</title>
+</head>
+
+<body>
+
+
+  <nav>
+    <ul class="menu">
+      <li class="top-menu">
+        <a href="index.html" target="_blank"> OurDataTables </a>
+
+        <div>
+          <ul class="sub-menu">
+            <li>
+              <a href="audit.html" target="_blank" >Audit</a>
+            </li>
+            <br>
+            <li>
+              <a href="calendar.html" target="_blank">Calendar</a>
+            </li>
+            <br>
+            <li>
+              <a href="data.html" target="_blank">Data</a>
+            </li>
+            <br>
+            <li>
+              <a href="prices.html" target="_blank">Prices</a>
+            </li>
+      </li>
+    </ul>
+
+    </div>
+    </li>
+    <li class="top-menu"><a href="#">Contact Us</a></li>
+    <li class="top-menu"><a href="#">Impressum</a></li>
+    </ul>
+
+  </nav>
+  <br>
+  <header>
+    <a href="#">
+      <i class="fas fa-chart-line"></i>
+    </a>
+    <h1>Datalites</h1>
+
+  </header>
+  <br>
+ 
+    <main>
+      <div>
+
+        <h3>
+          Prices Table Example
+        </h3>
+      <br><br>
+      <!-- Make 3 divs -->
+      <div class="container-prices">
+      <table class="prices-table">
+        <!-- Caption always goes between table and head tags -->
+        <thead class="prices-head">
+         
+          <tr>
+            <th class="basic">
+              Basic
+            </th>
+            <th class="premium">
+              Premium
+            </th>
+            <th class="deluxe">
+              Deluxe
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+    
+          <div class="prices">
+            <tr class="month">
+              <td>$ 40/ Month</td>
+              <td>$ 70/ Month</td>
+              <td>$ 109/ Month</td>
+            </tr>
+          </div>
+          <!-- Can add the icons in CSS instead -->
+          <div class="info">
+            <tr>
+              <td>
+                <i class="fas fa-users"></i>5 Members
+              </td>
+              <td>
+                <i class="fas fa-users"></i>40 Members
+              </td>
+              <td>
+                <i class="fas fa-users"></i>105 Members
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-database"></i>100GB Storage
+              </td>
+              <td>
+                <i class="fas fa-database"></i>700GB Storage
+              </td>
+              <td>
+                <i class="fas fa-database"></i>5TB Storage
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-mobile-alt"></i>Single Device
+              </td>
+              <td>
+                <i class="fas fa-mobile-alt"></i>Eight Devices
+              </td>
+              <td>
+                <i class="fas fa-mobile-alt"></i>Five Devices
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fas fa-cloud-upload-alt"></i>Weekly Backups
+              </td>
+              <td>
+                <i class="fas fa-cloud-upload-alt"></i>Hourly Backups
+              </td>
+              <td>
+                <i class="fas fa-cloud-upload-alt"></i>Daily Backups
+              </td>
+            </tr>
+          </div>
+        </tbody>
+        <!-- Footer of table -->
+        <tfoot>
+          <tr>
+            <td class="button-buy">
+              <button type="submit" name="buy" id="buy"><label for="buy">Buy Now</label>
+              </button>
+            </td>
+
+            <td class="button-buy">
+              <button type="submit" name="buy" id="buy"><label for="buy">Buy Now</label>
+              </button>
+            </td>
+
+            <td class="button-buy">
+              <button type="submit" name="buy" id="buy"><label for="buy">Buy Now</label>
+              </button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+  </div>
+</div>
+  </main>
+  <footer>
+    @copyright 2021 Datalites. All rights reserved.
+  </footer>
+</body>
+
+
+
+</html>

@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* :root {
+    font-size: 62.5%;
+    (1.6rem is 16px)
+    (1rem is 10px)
+    (62.5%*16 is 10, will calculate in browser)
+}
+Good to make 1rem as 10px so more accessible for users to change size in the browsers and less math for the developer to do.
+Default 1rem is 16px
+rem is effected by root
+em is not effected by root
+ */
+
+
+ /* Can @import url() fonts in CSS instead */
+
+ /* Can use fontawesome CDN in CSS */
+
+/* MENU */
+
+.tables-main {
+    box-sizing: border;
+    display: block;
+    position: absolute;
+}
+
+.menu {
+    font-family: 'Comfortaa', cursive;
+    font-size: 24px;
+    color: rgb(60, 255, 0);
+    background-color: black;
+    display: block;
+    max-width: 1200px;
+    height: 50px;
+    padding: 20px;
+    margin: 0px auto;
+    position: relative;
+}
+
+ul li {
+    display: inline-block;
+    background-color: black;
+    padding: 7px 25px 7px 25px;
+    margin-top: 7px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.menu:hover .sub-menu {
+    display: inline-block;
+    color: white;
+    background-color: black;
+    padding: 7px;
+    margin-top: 7px;
+    position: absolute;
+}
+
+a:link {
+    text-decoration: none;
+    color: lawngreen;
+}
+
+a:visited {
+    color: lawngreen;
+}
+
+a:hover {
+    color: rgb(255, 6, 102);
+}
+
+.fa-chart-line {
+    font-size: 36px;
+    float: left;
+    margin: 0px 15px 0px 15px;
+}
+
+h1 {
+    padding-left: 20px;
+    font-family: 'Comfortaa', cursive;
+    text-shadow: lawngreen 2px 2px 3px;
+}
+
+h3 {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    margin-left: 75px;
+    display: inline-block;
+}
+
+h3 .datalites {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    margin-left: 75px;
+    display: inline-block;
+}
+
+footer {
+    background-color: black;
+    color: lawngreen;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+}
+
+/* AUDIT */
+
+.audit, th, td {
+    padding: 10px 5px 10px 5px;
+    width: fit-content;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.audit thead {
+    margin-bottom: 10px;
+}
+
+.audit th {
+    color: white;
+    background-color: rgb(0, 119, 255);
+    font-weight: 600;
+}
+
+.audit tr {
+    font-weight: 550;
+}
+
+.audit tr:nth-child(odd) {
+    background-color: rgb(116, 181, 255);
+}
+
+.audit tr:nth-child(even) {
+    background-color: rgb(214, 239, 245);
+}
+
+/* Example to color tr/row and td/cells
+tr:nth-child(odd) td {
+    background-color: rgb(116, 181, 255);
+} */
+
+/* CALENDAR */
+
+.calendar {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    width: 65%;
+    height: 65%;
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+
+.calendar th {
+    color: white;
+    background-color: rgb(0, 68, 255);
+    padding: 10px;
+}
+
+.calendar tr td {
+    color: black;
+    background-color: rgb(255, 255, 252);
+    padding: 10px;
+}
+
+.calendar td:hover {
+    font-family: 'Wallpoet', cursive;
+    font-size: 16px;
+    color: rgb(147, 0, 245);
+    background-color: rgba(182, 250, 182, 0.877);
+}
+
+/* DATA */
+
+/* How to center table? */
+
+.main-data {
+    display: block;
+    width: 100%;
+    /* padding: 5px; */
+    font-family: 'Open Sans', sans-serif;
+    /* margin: 0px 30px 0px 30px; */
+}
+
+span.cap {
+    background-color: darkslateblue;
+    color: white;
+    display: inline-block;
+    width: 700px;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+}
+
+
+.data-table {
+    display: inline-block;
+    margin: 0 auto;
+    width: 700px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    /* background-color: lavenderblush; */
+    border: black 1px solid;
+}
+
+.entries {
+    font-family: 'Open Sans', sans-serif;
+    vertical-align: top;
+    float: left;
+}
+
+.search {
+    font-family: 'Open Sans', sans-serif;
+    vertical-align: top;
+    float: right;
+}
+
+input[type="search"] {
+    box-shadow: limegreen 1px 1px 3px;
+}
+
+.data-table tr:nth-child(odd) td {
+    background-color: rgb(248, 243, 243);
+}
+
+.data-table th {
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+.data-table td {
+    text-align: left;
+}
+
+button[id="age"] {
+    background-color: limegreen;
+    width: 50px;
+    height: 25px;
+    border-radius: 10%;
+}
+
+/* PRICES */
+
+/* the borders of an HTML element form an angle where they join. We can make use of this to create a triangle by setting a transparent color for 3 of the borders and leaving only one visible. So, the bottom border will create a triangle pointing up, the left border will create a triangle pointing right and so on.  */
+/* Do with 1 or 3 tables */
+
+.prices-table {
+    max-width: 1000px;
+    height: 100%;
+    margin: 0px auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    /* width: 40%;
+    min-width: 700px;
+    height: auto;
+    border-collapse: separate;
+    border-spacing: 10px 0;
+    margin: 10rem auto; (auto centers in middle)
+    text-align:center;*/
+   
+  
+ 
+}
+
+
+
+.prices-table tr:nth-child(2), tr:nth-child(3), tr:nth-child(4), tr:nth-child(5) {
+    background-color: rgb(235, 235, 235);
+    border: black 1px solid;
+    width: 400px;
+   
+ 
+}
+
+/* font size of audit table is conflicting with this table */
+.month {
+    width: 200px;
+    height: 100px;
+    background-color: white;
+   
+}
+
+.basic {
+    background-color: rgb(77, 5, 0);
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    width: 200px;
+    margin-right: 5px;
+  
+}
+
+.premium {
+    background-color: rgb(235, 105, 148);
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    width: 200px;
+}
+
+.deluxe {
+    background-color: rgb(148, 0, 44);
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    width: 200px;
+}
+
+
+.prices-table tfoot {
+    background-color: white;
+    height: 150px;
+}
+
+.fa-users, .fa-database, .fa-mobile-alt, .fa-cloud-upload-alt{
+    font-size: 20px;
+    text-align: left;
+    padding-left:5px;
+    float: left;
+   
+}
+
+button[id="buy"] {
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(255, 83, 53);
+    border: orange 1px solid;
+    border-radius: 5%;
+}
